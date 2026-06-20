@@ -8,6 +8,10 @@ Memory jest dla rzeczy o user / współpracy / sesji / kontekście których
 w regułach nie ma sensu trzymać. Wypełnia się organicznie.
 -->
 
+## Setup / kontekst
+
+- [Backup repo claude-config](claude-config-backup-repo.md) — ~/.claude wersjonowany w prywatnym `git@github.com:DoneQ/claude-config.git`; „backupuj klaudy" → odśwież i `git push`
+
 ## Współpraca
 
 - [Task list completeness](task-list-completeness.md) — gdy user daje listę zadań: zapisz ją durably, wykonaj WSZYSTKO, zweryfikuj 100%, wyjaśnij każdy brak
