@@ -9,7 +9,9 @@ metadata:
 
 Konfiguracja Claude Code (`~/.claude`) ma backup w prywatnym repo git: **`git@github.com:DoneQ/claude-config.git`** (GitHub, konto DoneQ). Lokalny working copy: `C:\Users\ukryt\claude-config`.
 
-Repo zawiera: globalny `CLAUDE.md`, `rules/**`, `hooks/preflight-check.ps1`, `memory/**`, `projects-backup/<projekt>/{CLAUDE.md,PROJECT_MAP.md}`. NIE zawiera dokumentacji pluginów ani sekretów. README ma: mapę „co gdzie należy", **ścieżki projektów per komputer** (na razie tylko `DONEQ`; drugi komp do uzupełnienia po `git pull`), i instrukcję szybkiej aktualizacji.
+Repo zawiera: globalny `CLAUDE.md`, `rules/**`, `hooks/preflight-check.ps1`, `memory/**`, `projects-backup/<projekt>/{CLAUDE.md,PROJECT_MAP.md}`. NIE zawiera dokumentacji pluginów ani sekretów.
+
+**ZASADA (user, twarda):** WSZYSTKO „od Claude" (.md) — globalny CLAUDE.md, rules, memory ORAZ per-project `CLAUDE.md`/`PROJECT_MAP.md` — trafia ZAWSZE do tego prywatnego repo. Per-project pliki Claude też tu należą (to pliki Claude, nie kod projektu). Na inne gity (np. Netland) idą pliki ŹRÓDŁOWE konkretnego projektu, ale pliki „claudowe" NIGDY tam — tylko tu. README ma: mapę „co gdzie należy", **ścieżki projektów per komputer** (na razie tylko `DONEQ`; drugi komp do uzupełnienia po `git pull`), i instrukcję szybkiej aktualizacji.
 
 **Auth:** klucz SSH `~/.ssh/id_ed25519` działa dla GitHub DoneQ. `gh` CLI NIE jest zainstalowany, git nie ma globalnej tożsamości (repo-local: `DoneQ` / `DoneQ@users.noreply.github.com`). Jeden remote (GitHub) — user mówi „gitlab" na github.com/DoneQ, NIE ma osobnego GitLaba/mirrora.
 

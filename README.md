@@ -3,6 +3,11 @@
 Backup konfiguracji Claude Code (`~/.claude`) + per-project `CLAUDE.md` / `PROJECT_MAP.md`.
 Trzymane na gicie do synchronizacji między komputerami.
 
+> **Zasada:** wszystko „od Claude" (`.md`) — globalny `CLAUDE.md`, `rules`, `memory`
+> **oraz** per-project `CLAUDE.md` / `PROJECT_MAP.md` — trafia **zawsze tutaj** (prywatny
+> repo). Pliki źródłowe konkretnego projektu idą do swoich repo (np. Netland) — ale pliki
+> „claudowe" **nigdy** tam, tylko tu.
+
 ## Co gdzie należy (per typ pliku)
 
 | Typ pliku | Plik w repo | Docelowa lokalizacja |
