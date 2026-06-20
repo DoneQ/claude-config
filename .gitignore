@@ -1,0 +1,8 @@
+# versioning is git's job now — no timestamped backups
+*.bak
+*.bak.*
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
