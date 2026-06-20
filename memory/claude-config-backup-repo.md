@@ -11,6 +11,6 @@ Konfiguracja Claude Code (`~/.claude`) ma backup w prywatnym repo git: **`git@gi
 
 Repo zawiera: globalny `CLAUDE.md`, `rules/**`, `hooks/preflight-check.ps1`, `memory/**`, `projects-backup/<projekt>/{CLAUDE.md,PROJECT_MAP.md}`. NIE zawiera dokumentacji pluginów ani sekretów. README ma: mapę „co gdzie należy", **ścieżki projektów per komputer** (na razie tylko `DONEQ`; drugi komp do uzupełnienia po `git pull`), i instrukcję szybkiej aktualizacji.
 
-**Auth:** klucz SSH `~/.ssh/id_ed25519` działa dla GitHub DoneQ. `gh` CLI NIE jest zainstalowany, git nie ma globalnej tożsamości (repo-local: `DoneQ` / `DoneQ@users.noreply.github.com`). **GitLab mirror = pending**: gitlab.com odrzuca ten klucz (`Permission denied`) i brak potwierdzonego URL.
+**Auth:** klucz SSH `~/.ssh/id_ed25519` działa dla GitHub DoneQ. `gh` CLI NIE jest zainstalowany, git nie ma globalnej tożsamości (repo-local: `DoneQ` / `DoneQ@users.noreply.github.com`). Jeden remote (GitHub) — user mówi „gitlab" na github.com/DoneQ, NIE ma osobnego GitLaba/mirrora.
 
 **How to apply:** gdy user mówi „backupuj klaudy" / „zaktualizuj backupy" — po odświeżeniu `~/.claude/projects-backup/` skopiuj aktualne md do `~/claude-config` (wg sekcji „Aktualizacja" w README) i `git push`. Powiązane: [[verify-against-git-not-summary]].

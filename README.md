@@ -76,15 +76,7 @@ cp "$SRC/hooks/preflight-check.ps1"  hooks/preflight-check.ps1
 git add -A && git commit -m "update config" && git push
 ```
 
-## GitLab (mirror) — DO DOKOŃCZENIA
+## Remote
 
-Planowany drugi remote (mirror). **Pending** — wymaga:
-1. autoryzacji klucza `~/.ssh/id_ed25519.pub` na docelowym GitLabie (na `gitlab.com` obecnie
-   zwraca `Permission denied (publickey)`),
-2. podania dokładnego URL repo (np. `git@gitlab.com:DoneQ/claude-config.git` lub self-hosted).
-
-Po ustaleniu URL:
-```bash
-git remote set-url --add --push origin git@github.com:DoneQ/claude-config.git
-git remote set-url --add --push origin <URL-gitlab>     # jeden `git push` na oba
-```
+Jeden host: **`git@github.com:DoneQ/claude-config.git`** (GitHub, konto DoneQ). Klucz SSH
+`~/.ssh/id_ed25519` autoryzowany. Brak osobnego mirrora.
